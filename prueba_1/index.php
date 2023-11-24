@@ -53,6 +53,8 @@
         </div>
     </div>
 
+    <!-- TIPO DE PUERTA ---------------------->
+
     <div style="padding-top:20px">
         <h6>Línea</h6>
         <div class="form-check form-check-inline">
@@ -64,6 +66,8 @@
             <label class="form-check-label" for="inlineRadio2">Corrediza</label>
         </div>
     </div>
+
+    <!-- MARCOS ---------------------->
 
     <div style="padding-top:20px">
         <h6>Marco</h6>
@@ -92,6 +96,8 @@
             <label class="form-check-label" for="inlineRadio3">Aluminio</label>
         </div>
     </div>
+
+    <!-- HOJAS ---------------------->
 
     <div style="padding-top:20px">
         <h6>Hoja</h6>
