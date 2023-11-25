@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
-<script>
+<!-- <script>
     function funcion(){
         if(document.formulario.box.checked == true){
             document.formulario.nombre.disabled = false;
@@ -18,7 +18,7 @@
             document.formulario.campo2.disabled = true;
         }
     }
-</script>
+</script> -->
 
 
 
@@ -28,42 +28,42 @@
 
 <div class="container-fluid">
 
+<form action="">
 
-    <div style="padding-top:20px">
+<!--     <div style="padding-top:20px">
         
         <h6>Tipo de Puerta</h6>
 
-        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-        <label class="btn btn-secondary" for="option1">Abrir</label>
-
-        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-        <label class="btn btn-secondary" for="option2">Corrediza</label>
+        <input type="radio" class="btn-check" name="options" id="" autocomplete="off">
+        <label class="btn btn-secondary" for="">Abrir</label>
+        <input type="radio" class="btn-check" name="options" id="" autocomplete="off">
+        <label class="btn btn-secondary" for="">Corrediza</label>
 
     </div>
 
     <div style="padding-top:20px">
         <h6>Tipo de Puerta</h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipo" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Abrir</label>
+            <input class="form-check-input" type="radio" name="inlineRadioTipo" id="" value="1">
+            <label class="form-check-label" for="">Abrir</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipo" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Corrediza</label>
+            <input class="form-check-input" type="radio" name="inlineRadioTipo" id="" value="2">
+            <label class="form-check-label" for="">Corrediza</label>
         </div>
     </div>
-
+ -->
     <!-- TIPO DE PUERTA ---------------------->
 
     <div style="padding-top:20px">
-        <h6>Línea</h6>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipo" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Abrir</label>
+        <h6>Tipo</h6>
+        <div class="form-check form-check-inline" id="tipoPuerta">
+            <input class="form-check-input" type="radio" name="inlineRadioTipo" id="puertaAbrir" value="1">
+            <label class="form-check-label" for="puertaAbrir">Abrir</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipo" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Corrediza</label>
+            <input class="form-check-input" type="radio" name="inlineRadioTipo" id="puertaCorrediza" value="2">
+            <label class="form-check-label" for="puertaCorrediza">Corrediza</label>
         </div>
     </div>
 
@@ -72,28 +72,40 @@
     <div style="padding-top:20px">
         <h6>Marco</h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipoMarco" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Chapa Extra</label>
+            <input class="form-check-input" type="radio" name="inlineRadioMarco" id="marcoExtra" value="1">
+            <label class="form-check-label" for="marcoExtra">Chapa Extra</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipoMarco" id="inlineRadioTipoMarco" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Chapa Inter</label>
+            <input class="form-check-input" type="radio" name="inlineRadioMarco" id="marcoInter" value="2">
+            <label class="form-check-label" for="marcoInter">Chapa Inter</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipoMarco" id="inlineRadioTipoMarco" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Chapa Eco</label>
+            <input class="form-check-input" type="radio" name="inlineRadioMarco" id="marcoEco" value="33">
+            <label class="form-check-label" for="marcoEco">Chapa Eco</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipoMarco" id="inlineRadioTipoMarco" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Madera Pino Finger-Joited</label>
+            <input class="form-check-input" type="radio" name="inlineRadioMarco" id="marcoPino" value="8">
+            <label class="form-check-label" for="marcoPino">Madera Pino Finger-Joited</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipoMarco" id="inlineRadioTipoMarco" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Madera Cedro</label>
+            <input class="form-check-input" type="radio" name="inlineRadioMarco" id="marcoCedro" value="5">
+            <label class="form-check-label" for="marcoCedro">Madera Cedro</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipoMarco" id="inlineRadioTipoMarco" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Aluminio</label>
+            <input class="form-check-input" type="radio" name="inlineRadioMarco" id="marcoAluminio" value="9">
+            <label class="form-check-label" for="marcoAluminio">Aluminio</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMarco" id="marcoExtraSeco" value="6">
+            <label class="form-check-label" for="marcoExtraSeco">Chapa Extra Seco</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="marcoInterSeco" id="marcoInterSeco" value="62">
+            <label class="form-check-label" for="marcoInterSeco">Chapa Inter Seco</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="marcoPinoSeco" id="marcoPinoSeco" value="68">
+            <label class="form-check-label" for="marcoPinoSeco">Madera Pino Finger-Joited Seco</label>
         </div>
     </div>
 
@@ -102,66 +114,168 @@
     <div style="padding-top:20px">
         <h6>Hoja</h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="3" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Aluminio</label>
+            <input class="form-check-input" type="radio" name="inlineRadioHoja" id="tradicional" value="option1">
+            <label class="form-check-label" for="tradicional">Tradicional</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="3" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Chapa</label>
+            <input class="form-check-input" type="radio" name="inlineRadioHoja" id="hardPlack" value="option2">
+            <label class="form-check-label" for="hardPlack">Hard-Plack</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="3" id="inlineRadio3" value="option3" disabled>
-            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+            <input class="form-check-input" type="radio" name="inlineRadioHoja" id="pantografiada" value="option3">
+            <label class="form-check-label" for="pantografiada">Pantografiada</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="3" id="inlineRadio3" value="option3" disabled>
-            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+            <input class="form-check-input" type="radio" name="inlineRadioHoja" id="masonite" value="option3">
+            <label class="form-check-label" for="masonite">Masonite</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="3" id="inlineRadio3" value="option3" disabled>
-            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="3" id="inlineRadio3" value="option3" disabled>
-            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="3" id="inlineRadio3" value="option3" disabled>
-            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="3" id="inlineRadio3" value="option3" disabled>
-            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="3" id="inlineRadio3" value="option3" disabled>
-            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+            <input class="form-check-input" type="radio" name="inlineRadioHoja" id="cortafuegos" value="option3">
+            <label class="form-check-label" for="cortafuegos">Cortafuegos</label>
         </div>
     </div>
 
     <div style="padding-top:20px">
-        <h6>Modelo</h6>
+        <h6>Terminación / Modelo</h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipo" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Abrir</label>
+            <input class="form-check-input" type="radio" name="inlineRadioTerminacion" id="cedropremium" value="3PR">
+            <label class="form-check-label" for="cedropremium">Cedro Premium</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioTipo" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Corrediza</label>
+            <input class="form-check-input" type="radio" name="inlineRadioTerminacion" id="wengue" value="option2">
+            <label class="form-check-label" for="wengue">Wengue</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioTerminacion" id="roble" value="">
+            <label class="form-check-label" for="roble">Roble</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioTerminacion" id="cedroNacional" value="3">
+            <label class="form-check-label" for="cedroNacional">Cedro Nacional</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioTerminacion" id="guatambuEnchapado" value="4">
+            <label class="form-check-label" for="guatambuEnchapado">Guatambu Enchapado</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioTerminacion" id="guatambuTerciado" value="9">
+            <label class="form-check-label" for="guatambuTerciado">Guatambu Terciado</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioTerminacion" id="pinoTerciado" value="">
+            <label class="form-check-label" for="pinoTerciado">Pino Terciado</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioTerminacion" id="mdf" value="5">
+            <label class="form-check-label" for="mdf">MDF</label>
         </div>
     </div>
+    <div style="padding-top:20px">
+        <h6>Medida</h6>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida60" value="option1">
+            <label class="form-check-label" for="medida60">60</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida70" value="option2">
+            <label class="form-check-label" for="medida70">70</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida80" value="option2">
+            <label class="form-check-label" for="medida80">80</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida90" value="option2">
+            <label class="form-check-label" for="medida90">90</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida120" value="option1">
+            <label class="form-check-label" for="medida120">120</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida140" value="option2">
+            <label class="form-check-label" for="medida140">140</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida160" value="option2">
+            <label class="form-check-label" for="medida160">160</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida180" value="option2">
+            <label class="form-check-label" for="medida180">180</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida80-40" value="option2">
+            <label class="form-check-label" for="medida80-40">80+40</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida90-30" value="option2">
+            <label class="form-check-label" for="medida90-30">90+30</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioMedida" id="medida60-20" value="option2">
+            <label class="form-check-label" for="medida60-20">60+20</label>
+        </div>
+        <div style="margin-top:30px">
+            <button type="submit" id="boton-resumen" class="btn btn-primary">Enviar</button>
+            <button type="reset" id="boton-borrar" class="btn btn-primary">Reestablecer</button>
+
+        </div>
+    </div>
+</div>
 
 
+<div class="container">
 
-
-
-
+    <div class="card" style="margin-top:50px">
+    <div class="card-body" id="codigoTango">
+        
+    </div>
+    </div>
 
 </div>
 
 
+</form>
 
 
+
+<script type="text/javascript">
+
+    var capturaBotonResumen = document.getElementById("boton-resumen")
+    capturaBotonResumen.addEventListener('click',generaCodigo)
+
+function generaCodigo(){
+    event.preventDefault()
+    console.log("Funciona el boton Resumen")
+
+    var capturaLinea
+    capturaLinea = document.getElementById("puertaAbrir")
+    
+/*     input[name="inlineRadioTipo"].checked.value */
+    return capturaLinea
+    
+    console.log(capturaLinea)
+
+
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+<!-- 
 <div class="container">
 
     
@@ -217,6 +331,7 @@
 </div>
 
 
+ -->
 <script type="text/javascript">
     //definir las variables correspondientes
 
@@ -225,7 +340,7 @@
 </script>
 
 
-    <div class="form-check" style=padding-top:50px>
+<!--     <div class="form-check" style=padding-top:50px>
     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
     <label class="form-check-label" for="flexRadioDefault1">
         Default radio
@@ -292,7 +407,7 @@
         <input type="submit">
         <input type="reset">
 
-    </form>
+    </form> -->
 
 
 
