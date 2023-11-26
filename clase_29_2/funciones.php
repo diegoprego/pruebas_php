@@ -76,7 +76,7 @@ echo "<br>";
 
 //Clase -> tiene atributos
 
-$persona1 = [
+/* $persona1 = [
     "nombre"=>"marcos",
     "apellido"=>"gomez",
     "edad"=>48,
@@ -85,7 +85,7 @@ $persona2 = [
     "nombre"=>"marcos",
     "apellido"=>"gomez",
     "edad"=>48,
-]
+] */
 
 //los Objetos son "clones" de la clase Persona, se usa porque los atributos de la clase se repiten todo el tiempo. Los objetos ya contiernen los atributos de la clase, solo tengo que efiir los valores
 
@@ -93,27 +93,80 @@ $persona2 = [
 
 //con "public" puedo acceder desde cualqueir parte, desde una funcion etc
 
+//La clase se crean los atributos pero no se les asigna valor
 class Persona {
 
     //atributos
     public $nombre;
     public $apellido;
-    public $edad;
+    public $edad=18;
     public $telefono;
-    public $soyRobot
+    public $soyRobot;
+
+    
+
+
+
+
+    // funciones en las clases se llaman "mètodos"
+
+    function presentacion(){
+
+        echo "Hola soy: ".  "y mi edad es: " ;
+    }
+
+    function hablar(){
+        echo "Estoy hablando bla bla bla";
+    }
+
+    function dormir($hora,$tarea){
+        
+        if($hora==1530 && $tarea==true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    function cantar(){
+        echo "Estoy cantando rap rap rap";
+    }
+
 
 }
 
 // instancio un objeto a partir de mi clase
 
-//Jose es un objeto de la clase persona
+//Jose es un objeto de la clase persona, cuando se crea se dice que "se instancia"
+// en php no hace falta indicarle el tipo de dato
+
 $jose = new Persona();
 
+$jose->nombre = "Jose";
+$jose->apellido = "velez";
+
+echo $jose->nombre;
+echo $jose->apellido;
+echo $jose->edad;
+$jose->hablar();
+$jose->cantar();
+echo $jose->dormir(1530,true); //como el return es booleano necesito imprimirlo para ver el resultado
+
+echo "<h2>Otro Objeto</h2> <br>";
+
+$gerardo = new Persona();
+
+$gerardo->nombre = "Gerardo";
+$gerardo->apellido = "Montalbo";
+$gerardo->edad = 52;
+
+echo $gerardo->nombre;
+echo $gerardo->apellido;
+echo $gerardo->edad;
 
 
 
-
-
+/* 
 class Oradores{
 
     $id_oradores;
@@ -121,11 +174,19 @@ class Oradores{
     $apellido;
     $correo;
     $tema;
-    $fecha_alta
+    $fecha_alta;
 
-}
+} */
 
+// TAREA FIN DE SEMANA
 
+/* crear una clase SuperHEroes, o algun tema <particular></particular>
+y generar 5 objetos
+
+- atributos
+- metodos/funciones
+
+*/
 
 
 
