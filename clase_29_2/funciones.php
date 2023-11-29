@@ -191,4 +191,18 @@ y generar 5 objetos
 
 
 
+echo "<br>";
+echo "require";
+
+// "REQUIRE" permite ingresar codigo o un bloque de codigo de otra pagina
+
+require "pages/header.php";
+require "pages/main.php";
+require "pages/footer.php";
+
+
+
+
+
+
 ?>
