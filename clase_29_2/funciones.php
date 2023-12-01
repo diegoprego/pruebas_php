@@ -146,6 +146,8 @@ class Persona {
 
 }
 
+$valorTelefonoUsuario = $_POST['telefono']; //cuando obtengo los datos por metodo POST tengo que llamar al atributo con comillas simples o dobles
+
 $miguel = new Persona();
 
 $miguel->nombre = "miguel";
@@ -153,8 +155,27 @@ $miguel->nombre = "miguel";
 //$miguel->telefono = "123456";
 
 echo $miguel->nombre;
-$miguel->setTelefono("0303456");
+$miguel->setTelefono($valorTelefonoUsuario);
 echo $miguel->getTelefono();
+
+// 1- tarea del finde....
+/*
+
+crear un form,ulario que tome x cantidad de inputs y que los asigne a un objeto
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
