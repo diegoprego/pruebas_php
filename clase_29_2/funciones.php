@@ -100,9 +100,8 @@ class Persona {
     public $nombre;
     public $apellido;
     public $edad=18;
-    public $telefono;
     public $soyRobot;
-
+    private $telefono;
     
 
 
@@ -132,8 +131,34 @@ class Persona {
         echo "Estoy cantando rap rap rap";
     }
 
+// metodos getter y setters.....
+
+
+    public function getTelefono(){ // con esta funcion puedo acceder a datos de private
+        return $this->telefono; // cando uso this el atributo lo escribo sin $
+        // la unica manera de acceder a un atributo "privado" es a traves de un metodo
+    }
+
+    public function setTelefono($telefono){
+        $this->telefono = $telefono;
+
+    }
 
 }
+
+$miguel = new Persona();
+
+$miguel->nombre = "miguel";
+
+//$miguel->telefono = "123456";
+
+echo $miguel->nombre;
+$miguel->setTelefono("0303456");
+echo $miguel->getTelefono();
+
+
+
+
 
 // instancio un objeto a partir de mi clase
 
