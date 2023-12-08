@@ -25,6 +25,9 @@ if(mysqli_connect_errno()){ // esta funcion preestablecida es TRUE cuando no se 
 }
 
 
+
+
+
 /*
 
 1 - conexion

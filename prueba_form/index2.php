@@ -17,6 +17,8 @@
 </head>
 <body>
 
+<div class="container">
+
 <table class="table">
   <thead>
     <tr>
@@ -24,6 +26,7 @@
       <th scope="col">Nombre</th>
       <th scope="col">Apellido</th>
       <th scope="col">Curso</th>
+      <th scope="col"></th>
     </tr>
   </thead>
 
@@ -40,6 +43,7 @@
       <td><?php echo $mostrar["nombre"] ?></td>
       <td><?php echo $mostrar["apellido"] ?></td>
       <td><?php echo $mostrar["curso"] ?></td>
+      <td><button>Eliminar</button></td>
     </tr>
   </tbody>
 
@@ -50,6 +54,7 @@
         ?>
 
 </table>
+</div>
     
 </body>
 </html>
