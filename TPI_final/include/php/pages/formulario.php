@@ -20,7 +20,7 @@
     </div>
     <div class="mb-3">
         <input type="email" class="form-control" placeholder="Correo" aria-describedby="emailHelp" id="campoEmail" name="email">
-        </div>
+    </div>
 
     <div class="">
         <textarea class="form-control" placeholder="Sobre qué quieres hablar?" id="floatingTextarea2" style="height: 200px" name="tema"></textarea>
@@ -38,13 +38,3 @@ require "include/php/conexion/registrar.php";
 ?>
 </div>
 
-<script>
-
-var capturaBotonEnviar = document.getElementById("boton-formulario")
-capturaBotonEnviar.addEventListener('click',enviar)
-
-function enviar(){
-    capturaBotonEnviar.preventDefault();
-}
-
-</script>

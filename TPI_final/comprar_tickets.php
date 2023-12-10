@@ -113,7 +113,7 @@ require "include/php/pages/header.php";
 
 
 <!-- F O O T E R -->
-
 <?php
-require "include/php/pages/footer.php"
+require "include/php/pages/footer.php";
+require "include/php/pages/scripts.php";
 ?>

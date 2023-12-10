@@ -125,6 +125,7 @@ require "include/php/pages/header.php";
 <!-- FORMULARIO -->
 
 <?php
+require "include/php/conexion/conexion.php";
 require "include/php/pages/formulario.php";
 ?>
 
@@ -132,7 +133,8 @@ require "include/php/pages/formulario.php";
 <!-- F O O T E R -->
 
 <?php
-require "include/php/pages/footer.php"
+require "include/php/pages/footer.php";
+require "include/php/pages/scripts.php";
 ?>
 
 
