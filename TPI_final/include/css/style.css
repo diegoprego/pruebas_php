@@ -214,3 +214,37 @@ footer {
     text-align: left;
     padding-bottom: 1.5%;
 }
+
+
+#listadoOradores{
+    margin-top: 3%;
+}
+
+.ok{
+    text-align: center;
+    background-color: rgb(127, 211, 0);
+    color: white;
+    border: none;
+    margin-top: 2%;
+    font-size: large;
+    padding: 9px;
+}
+
+.bad{
+    text-align: center;
+    background-color: #a22;
+    color: white;
+    border: none;
+    margin-top: 2%;
+    font-size: large;
+    padding: 9px;
+}
+
+#recuentoOradores{
+    text-align: center;
+    background-color: rgb(128, 128, 128) ;
+    padding: 12px;
+    margin-bottom: 2%;
+    color: white;
+
+}

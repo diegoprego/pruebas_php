@@ -33,3 +33,11 @@ function limpiarFormulario(){
     document.getElementById("campoCantidad").value = "";
     document.getElementById("campoCategoriaEstudiante").value = 1;
 }
+
+var capturaBotonEnviar = document.getElementById("boton-formulario")
+capturaBotonEnviar.addEventListener('click',enviar)
+
+function enviar(){
+    capturaBotonEnviar.preventDefault();
+}
+

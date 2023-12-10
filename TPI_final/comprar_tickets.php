@@ -1,42 +1,9 @@
+<!-- HEADER + NAV -->
 <?php
 require "include/php/pages/header.php";
 ?>
 
  
-<!-- N A V E G A C I O N -->
-
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="include/img/codoacodo.png" alt="" width="80" class="d-inline-block align-text-center">
-        Conf Bs As
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-text-center">
-          <li id="n1" class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.php">La Conferencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#oradores">Los oradores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#playa-container">El lugar y la fecha</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#formulario">Conviértete en orador</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" id="tickets" href="#">Comprar tickets</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<!-- Fin barra de navegacion -->
-
 
 <!-- C A R D S -->
 <div class="container" id="estudiantes-categorias" >
