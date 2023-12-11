@@ -53,8 +53,8 @@ $fila = $result->fetch_assoc();
                 <td><?php echo $mostrar["fecha_alta"] ?></td>
 <!--                 <td><button type="button" class="btn btn-success editbtn" data-bs-toggle="modal" data-bs-target="#editarOrador">Editar</button></td>
                 <td><button type="button" class="btn btn-success editbtn" data-bs-toggle="modal" data-bs-target="#editarOrador">Editar</button></td> -->
-                <td><a href="modificar.php?id_orador=<?php echo $mostrar['id_orador'];?>" class="btn btn-success" role="button">Editar</a></td>
-                <td><a href="eliminar.php?id_orador=<?php echo $mostrar['id_orador'];?>" class="btn btn-danger" role="button">Borrar</a></td>
+                <td><a href="modificar.php?id_orador=<?php echo $mostrar['id_orador'];?>" class="btn btn-success btn-sm" role="button" data-bs-toggle="modal" data-bs-target="#editarOrador">Editar</a></td>
+                <td><a href="eliminar.php?id_orador=<?php echo $mostrar['id_orador'];?>" class="btn btn-danger btn-sm" role="button">Borrar</a></td>
                 </tr>
             </tbody>
             <?php
@@ -66,43 +66,6 @@ $fila = $result->fetch_assoc();
 
 
 
-<!--     <div class="modal fade" id="insertarOrador" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Registrar Orador</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            
-            <div class="modal-body">
-
-                <form action="" method="post">
-                    <div class="form-group" >
-                        <div class="mb-3">
-                            <div class="row">
-                                <div class="col-md">
-                                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" name="nombre">
-                                </div>
-                                <div class="col-md">
-                                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" name="apellido">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Correo" aria-describedby="emailHelp" id="campoEmail" name="email">
-                        </div>
-                        <div class="">
-                            <textarea class="form-control" placeholder="Tema" id="floatingTextarea2" style="height: 200px" name="tema"></textarea>
-                        </div>
-                    </div>                
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary" name="enviar">Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Modal Editar-->
     <div class="modal fade" id="editarOrador" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -115,28 +78,29 @@ $fila = $result->fetch_assoc();
             
             <div class="modal-body">
                 <!-- formulario -->
-                <form action="admin.php" method="post">
+                <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+                <!-- <form action="modificar.php" method="post"> -->
                     <div class="form-group" >
                         <div class="mb-3">
                             <div class="row">
                                 <div class="col-md">
-                                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" name="nombre" id="nombre">
+                                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" name="nombre" id="mNombre" value="<?php echo $mostrar['nombre'];?>" required>
                                 </div>
                                 <div class="col-md">
-                                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" name="apellido" id="apellido" >
+                                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" name="apellido" id="mApellido" value="<?php echo $dato['apellido'];?>" required>
                                 </div>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Correo" aria-describedby="emailHelp" id="campoEmail" name="email" id="email" >
+                            <input type="email" class="form-control" placeholder="Correo" aria-describedby="emailHelp" id="campoEmail" name="email" id="mEmail" required>
                         </div>
                         <div class="">
-                            <textarea class="form-control" placeholder="Tema" id="floatingTextarea2" style="height: 200px" name="tema" id="tema"></textarea>
+                            <textarea class="form-control" placeholder="Tema" id="floatingTextarea2" style="height: 200px" name="tema" id="mTema" required></textarea>
                         </div>
                     </div>                
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary" name="enviar">Enviar</button>
+                        <button type="submit" class="btn btn-primary" name="modificar" value="Modificar">Modificar</button>
                     </div>
                 </form>
             </div>
